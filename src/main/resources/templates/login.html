@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Tela Inicial</title>
+     <meta charset="UTF-8">
+     <link href="/style.css" rel="stylesheet" text="text/css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <header>
+          <div>
+            <h1 id="titulo">ENERGIA E FORÇA</h1>
+            <img id ="logotipo" src="/imagens/logo.png" alt="logo"/>
+          </div>
+        </header>
+        <h1 id="titulo1">BEM-VINDO</h1>
+        <h2 id="titulo2">LOGIN</h2>
+        <div id="formlog">
+        <form th:action="@{/centro/usuario/logon}" method="post" autocomplete="off">
+        <br />
+    
+        <input type="email" placeholder="Insira seu e-mail Ex.: abc1@gmail.com" required> <br /> <br /> 
+        <input type="password" placeholder="Insira sua senha" required> <br />
+
+        <a href="RecuperarSenha" id="link1">Recuperar Senha</a>
+        <br /> <br /> <br /> <br /> 
+
+        <button type="submit" id="button">ENTRAR</button>
+      </form>
+        </div>
+        <footer><p id="footer">Todos os direitos reservados a Corporação Energia e Força</p></footer>
+        </body>
+</html>

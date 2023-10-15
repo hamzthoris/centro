@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Painel de Membros</title>
+     <meta charset="UTF-8">
+     <link href="/style.css" rel="stylesheet" text="text/css"> 
+    </head>
+    <body>
+        <header>
+            <div>
+              <h1 id="titulo">ENERGIA E FORÇA</h1>
+              <img id ="logotipo" src="/imagens/logo.png" alt="logo"/>
+            </div>
+          </header>
+          <table class="tabelas">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Data de Nascimento</th>
+                <th>Número de Telefone</th>
+                <th>Nível</th>
+                <th>Função</th>
+                <th>Status do Membro</th>
+                <th>ID_Turma</th>
+                <th>ID_Usuario</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Rodrigo Sanchez</td>
+                <td>02/01/2006</td>
+                <td>+55 11 00000-0000</td>
+                <td>Intermediário</td>
+                <td>Aluno</td>
+                <td>true</td>
+                <td>1</td>
+                <td>1</td>
+                <td id="editar1"><a>Editar</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Furina</td>
+                <td>10/02/1997</td>
+                <td>+55 11 22222-1111</td>
+                <td>Instrutor</td>
+                <td>Avançado</td>
+                <td>true</td>
+                <td>2</td>
+                <td>1</td>
+                <td id="editar2"><a>Editar</a></td>
+            </tr>
+            
+                  </table>
+        <div class="buttonfiesta">
+         <button onclick="location.href='cadastroMembro'" class="tablebuttons">INCLUIR</button>
+        </div>
+        <img src="/imagens/exit (1).png" id="exit" onclick="location.href='paginainicial'">
+        <footer><p id="footer">Todos os direitos reservados a Corporação Energia e Força</p></footer>
+        
+    </body>
+</html>

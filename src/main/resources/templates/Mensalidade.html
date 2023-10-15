@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Painel de Mensalidade</title>
+     <meta charset="UTF-8">
+     <link href="/style.css" rel="stylesheet" text="text/css"> 
+    </head>
+    <body>
+        <header>
+            <div>
+              <h1 id="titulo">ENERGIA E FORÇA</h1>
+              <img id ="logotipo" src="/imagens/logo.png" alt="logo"/>
+            </div>
+          </header>
+          <table class="tabelas">
+            <tr>
+                <th>ID</th>
+                <th>Valor do Pagamento</th>
+                <th>Data Limite</th>
+                <th>Status de Pagamento</th>
+                <th>ID_Membro</th>
+                <th>Data do Pagamento</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>50R$</td>
+                <td>10/10/2023</td>
+                <td>Não Pago</td>
+                <td>1</td>
+                <td>Null</td>
+                <td id="editar1"><a>Editar</a></td>
+            </tr>
+          </table>
+            <div class="buttonfiesta">
+              <button onclick="location.href='registrarPagamento'" class="tablebuttons">INCLUIR</button>
+             </div>
+             <img src="/imagens/exit (1).png" id="exit" onclick="location.href='paginainicial'">
+             <footer><p id="footer">Todos os direitos reservados a Corporação Energia e Força</p></footer>        
+    </body>
+</html>

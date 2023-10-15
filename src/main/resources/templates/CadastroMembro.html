@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Cadastro de Membro</title>
+     <meta charset="UTF-8">
+     <link href="/style.css" rel="stylesheet" text="text/css"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <header>
+            <div>
+              <h1 id="titulo">ENERGIA E FORÇA</h1>
+              <img id ="logotipo" src="/imagens/logo.png" alt="logo"/>
+  
+            </div>
+          </header>
+          <form id="formpattern" method="post" autocomplete="off">
+            <h1 class="formtitle">Cadastro de Membro</h1>
+          <input type="text" placeholder="Insira o nome do membro" required> <br /> <br />
+            
+            
+            <h2 class="inputtext">Data de Nascimento</h2>
+            <input type="date" required> <br /> <br />
+            <input type="text" placeholder="Insira em que nível o membro está" required> <br /> <br />
+            <input type="text" placeholder="Insira o número de telefone do membro" required> <br /> <br />
+            <input type="text" placeholder="Insira o código da turma (ID)" required> <br /> <br />
+            
+            <div id="radio1">
+            <input type="radio" name="funcao"> <label class="sizing">Aluno</label>  
+          </div>
+            <div id="radio2">
+            <input type="radio" name="funcao"> <label class="sizing">Instrutor</label> 
+          </div>
+            <input type="submit" id="button" value="ENVIAR">
+          </form>
+          <img src="/imagens/exit (1).png" id="exit" onclick="location.href='paginainicial'">
+        </body>
+</html>

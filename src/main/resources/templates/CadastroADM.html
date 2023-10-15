@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Cadastro de ADM</title>
+     <meta charset="UTF-8">
+     <link href="/style.css" rel="stylesheet" text="text/css"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <header>
+            <div>
+              <h1 id="titulo">ENERGIA E FORÇA</h1>
+              <img id ="logotipo" src="/imagens/logo.png" alt="logo"/>
+            </div>
+          </header>
+
+          <form th:action="@{/centro/usuario/add-user}" id="formpattern" th:object="${usuario}" method="post" autocomplete="off">
+			  <h1 class="formtitle">Cadastro de ADM</h1>
+           <input type="text" placeholder="Insira o nome" th:field="*{nome}" minlength="3"> <br /> <br />
+           
+           <input type="email" placeholder="Insira o email" th:field="*{email}"> <br /> <br />
+           
+           <input type="password" placeholder="Crie uma senha" th:field="*{senha}"> <br /> <br />
+           
+           <input type="text" placeholder="Insira o nível de acesso" th:field="*{nivelAcesso}" > <br /> <br />
+
+           <input type="Submit" id="button" value="ENVIAR">
+           
+           <img src="/imagens/exit (1).png" id="exit" onclick="location.href='paginainicial'">
+          </form>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Editar Usuario</title>
+     <meta charset="UTF-8">
+     <link href="/style.css" rel="stylesheet" text="text/css"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <header>
+            <div>
+              <h1 id="titulo">ENERGIA E FORÇA</h1>
+              <img id ="logotipo" src="/imagens/logo.png" alt="logo"/>
+            </div>
+          </header>
+          <form id="formpattern" method="post" autocomplete="off" th:action="@{/centro/usuario/atualizar/{id}(id=${user.id})}" th:object="${user}">
+			 <h1 class="edith1">Nome do Usuário</h1>
+			 <input type="text" required th:field="*{nome}"> <br /> <br />
+			 <h1 class="edith1">E-mail do Usuário</h1>
+			 <input type="email" required th:field="*{email}"> <br /> <br />
+			 <h1 class="edith1">Senha do Usuário</h1>
+			 <input type="text" required th:field="*{senha}"> <br /> <br />
+			 <h1 class="edith1">Nível de Acesso do Usuário</h1>
+			 <input type="text" required th:field="*{nivelAcesso}"> <br /> <br />
+			 <h1 class="edith1">Status do Usuário</h1>
+			 <input type="text" required th:field="*{statusUsuario}"> <br /> <br />
+			 
+			 <input type="Submit" id="button" value="SALVAR">
+		  </form>
+    </body>
+</html>
